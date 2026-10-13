@@ -1,0 +1,1435 @@
+{
+  "status": "Оценки согласованы командой; недельные итоги предоставлены пользователем; часы по задачам восстановлены в диапазоне 3–5 ч",
+  "team": [
+    "Мартин Майжюс",
+    "Чуев Никита",
+    "Акнур Акмурадова"
+  ],
+  "phase2": {
+    "total_hours": 80,
+    "bounds_hours": [
+      20,
+      32
+    ],
+    "objective": 396,
+    "loads": [
+      26,
+      27,
+      27
+    ],
+    "owners": [
+      0,
+      2,
+      2,
+      1,
+      0,
+      0,
+      1,
+      1,
+      2,
+      0,
+      2,
+      1
+    ],
+    "tasks": [
+      {
+        "id": "T01",
+        "name": "Границы MVP и роли пользователей",
+        "hours": 5,
+        "preferences": [
+          5,
+          3,
+          4
+        ],
+        "owner": "Мартин Майжюс"
+      },
+      {
+        "id": "T02",
+        "name": "Список и цели Use Cases",
+        "hours": 7,
+        "preferences": [
+          4,
+          4,
+          5
+        ],
+        "owner": "Акнур Акмурадова"
+      },
+      {
+        "id": "T03",
+        "name": "Основные и альтернативные потоки UC01–UC06",
+        "hours": 8,
+        "preferences": [
+          3,
+          4,
+          5
+        ],
+        "owner": "Акнур Акмурадова"
+      },
+      {
+        "id": "T04",
+        "name": "Основные и альтернативные потоки UC07–UC12",
+        "hours": 8,
+        "preferences": [
+          3,
+          5,
+          4
+        ],
+        "owner": "Чуев Никита"
+      },
+      {
+        "id": "T05",
+        "name": "Граница COSMIC и группы данных",
+        "hours": 5,
+        "preferences": [
+          5,
+          3,
+          3
+        ],
+        "owner": "Мартин Майжюс"
+      },
+      {
+        "id": "T06",
+        "name": "Подсчёт движений COSMIC",
+        "hours": 9,
+        "preferences": [
+          5,
+          4,
+          2
+        ],
+        "owner": "Мартин Майжюс"
+      },
+      {
+        "id": "T07",
+        "name": "Акторы и веса UCP",
+        "hours": 4,
+        "preferences": [
+          4,
+          4,
+          3
+        ],
+        "owner": "Чуев Никита"
+      },
+      {
+        "id": "T08",
+        "name": "Сложность UC и факторы UCP",
+        "hours": 8,
+        "preferences": [
+          4,
+          5,
+          3
+        ],
+        "owner": "Чуев Никита"
+      },
+      {
+        "id": "T09",
+        "name": "Индивидуальные оценки трудоёмкости UC",
+        "hours": 6,
+        "preferences": [
+          3,
+          3,
+          5
+        ],
+        "owner": "Акнур Акмурадова"
+      },
+      {
+        "id": "T10",
+        "name": "Агрегация оценок и сравнение методов",
+        "hours": 7,
+        "preferences": [
+          5,
+          4,
+          3
+        ],
+        "owner": "Мартин Майжюс"
+      },
+      {
+        "id": "T11",
+        "name": "Команда, срок и исключения из MVP",
+        "hours": 6,
+        "preferences": [
+          4,
+          3,
+          5
+        ],
+        "owner": "Акнур Акмурадова"
+      },
+      {
+        "id": "T12",
+        "name": "Проверка расчётов и оформление фазы 3",
+        "hours": 7,
+        "preferences": [
+          3,
+          5,
+          4
+        ],
+        "owner": "Чуев Никита"
+      }
+    ]
+  },
+  "phase3": {
+    "uc": [
+      {
+        "id": "UC01",
+        "title": "Войти через учётную запись вуза",
+        "actor": "Студент/сотрудник",
+        "transactions": 3,
+        "complexity_weight": 5,
+        "E": 1,
+        "X": 1,
+        "R": 1,
+        "W": 0,
+        "cfp": 3,
+        "main_flow": "Пользователь передаёт удостоверение; сервис проверяет роль и открывает сессию.",
+        "alternate": "Неверная учётная запись: отказ и повторный вход.",
+        "expert_hours": [
+          15,
+          20,
+          19
+        ],
+        "consensus_hours": 19
+      },
+      {
+        "id": "UC02",
+        "title": "Просмотреть каталог оборудования",
+        "actor": "Студент/сотрудник",
+        "transactions": 3,
+        "complexity_weight": 5,
+        "E": 1,
+        "X": 1,
+        "R": 2,
+        "W": 0,
+        "cfp": 4,
+        "main_flow": "Выбрать категорию, получить карточки и правила выдачи.",
+        "alternate": "Пустой результат: предложить сбросить фильтр.",
+        "expert_hours": [
+          24,
+          20,
+          25
+        ],
+        "consensus_hours": 24
+      },
+      {
+        "id": "UC03",
+        "title": "Найти доступный интервал",
+        "actor": "Студент/сотрудник",
+        "transactions": 5,
+        "complexity_weight": 10,
+        "E": 1,
+        "X": 1,
+        "R": 3,
+        "W": 0,
+        "cfp": 5,
+        "main_flow": "Указать предмет и даты; получить свободные интервалы.",
+        "alternate": "Пересечение с бронью: показать ближайшую альтернативу.",
+        "expert_hours": [
+          30,
+          35,
+          32
+        ],
+        "consensus_hours": 32
+      },
+      {
+        "id": "UC04",
+        "title": "Создать заявку на бронь",
+        "actor": "Студент/сотрудник",
+        "transactions": 8,
+        "complexity_weight": 15,
+        "E": 2,
+        "X": 2,
+        "R": 3,
+        "W": 2,
+        "cfp": 9,
+        "main_flow": "Выбрать интервал, подтвердить правила, сохранить бронь и уведомить владельца.",
+        "alternate": "Коллизия или лимит: отказ с объяснением, без двойной брони.",
+        "expert_hours": [
+          74,
+          66,
+          72
+        ],
+        "consensus_hours": 72
+      },
+      {
+        "id": "UC05",
+        "title": "Изменить или отменить бронь",
+        "actor": "Студент/сотрудник",
+        "transactions": 6,
+        "complexity_weight": 10,
+        "E": 2,
+        "X": 2,
+        "R": 2,
+        "W": 2,
+        "cfp": 8,
+        "main_flow": "Открыть свою бронь, сменить интервал или отменить, обновить статус.",
+        "alternate": "После начала выдачи изменение запрещено.",
+        "expert_hours": [
+          47,
+          52,
+          54
+        ],
+        "consensus_hours": 52
+      },
+      {
+        "id": "UC06",
+        "title": "Посмотреть мои брони",
+        "actor": "Студент/сотрудник",
+        "transactions": 3,
+        "complexity_weight": 5,
+        "E": 1,
+        "X": 1,
+        "R": 2,
+        "W": 0,
+        "cfp": 4,
+        "main_flow": "Получить список активных и прошлых броней.",
+        "alternate": "Нет броней: показать пустое состояние.",
+        "expert_hours": [
+          21,
+          18,
+          22
+        ],
+        "consensus_hours": 21
+      },
+      {
+        "id": "UC07",
+        "title": "Подтвердить выдачу оборудования",
+        "actor": "Сотрудник пункта выдачи",
+        "transactions": 7,
+        "complexity_weight": 10,
+        "E": 2,
+        "X": 2,
+        "R": 3,
+        "W": 2,
+        "cfp": 9,
+        "main_flow": "Найти заявку, проверить личность и комплектность, отметить выдачу.",
+        "alternate": "Неявка или неподходящий статус: выдачу блокировать.",
+        "expert_hours": [
+          58,
+          52,
+          57
+        ],
+        "consensus_hours": 57
+      },
+      {
+        "id": "UC08",
+        "title": "Зарегистрировать возврат",
+        "actor": "Сотрудник пункта выдачи",
+        "transactions": 7,
+        "complexity_weight": 10,
+        "E": 2,
+        "X": 2,
+        "R": 3,
+        "W": 2,
+        "cfp": 9,
+        "main_flow": "Проверить предмет, отметить возврат и доступность.",
+        "alternate": "Повреждение: отметить инцидент и вывести предмет из доступных.",
+        "expert_hours": [
+          53,
+          59,
+          56
+        ],
+        "consensus_hours": 56
+      },
+      {
+        "id": "UC09",
+        "title": "Управлять карточкой и доступностью",
+        "actor": "Администратор",
+        "transactions": 8,
+        "complexity_weight": 15,
+        "E": 2,
+        "X": 2,
+        "R": 3,
+        "W": 2,
+        "cfp": 9,
+        "main_flow": "Создать или изменить карточку, правила и окна доступности.",
+        "alternate": "Нельзя удалить предмет с активной бронью.",
+        "expert_hours": [
+          62,
+          57,
+          64
+        ],
+        "consensus_hours": 62
+      },
+      {
+        "id": "UC10",
+        "title": "Управлять правами доступа",
+        "actor": "Администратор",
+        "transactions": 5,
+        "complexity_weight": 10,
+        "E": 2,
+        "X": 2,
+        "R": 2,
+        "W": 1,
+        "cfp": 7,
+        "main_flow": "Назначить роль сотрудника и сохранить аудит изменения.",
+        "alternate": "Самому себе нельзя снять последнюю роль администратора.",
+        "expert_hours": [
+          38,
+          43,
+          41
+        ],
+        "consensus_hours": 41
+      },
+      {
+        "id": "UC11",
+        "title": "Получить уведомление о статусе",
+        "actor": "Студент/сотрудник",
+        "transactions": 4,
+        "complexity_weight": 10,
+        "E": 1,
+        "X": 2,
+        "R": 2,
+        "W": 1,
+        "cfp": 6,
+        "main_flow": "После изменения статуса отправить уведомление и записать факт доставки.",
+        "alternate": "Сбой почты: повторить отправку, бронь оставить действительной.",
+        "expert_hours": [
+          29,
+          26,
+          30
+        ],
+        "consensus_hours": 29
+      },
+      {
+        "id": "UC12",
+        "title": "Посмотреть отчёт по использованию",
+        "actor": "Администратор",
+        "transactions": 5,
+        "complexity_weight": 10,
+        "E": 1,
+        "X": 2,
+        "R": 3,
+        "W": 0,
+        "cfp": 6,
+        "main_flow": "Выбрать период и получить число броней и загрузку оборудования.",
+        "alternate": "Нет данных: нулевой отчёт.",
+        "expert_hours": [
+          40,
+          35,
+          39
+        ],
+        "consensus_hours": 39
+      }
+    ],
+    "cosmic_total_cfp": 79,
+    "cosmic_assumed_hours_per_cfp": 8,
+    "cosmic_effort_hours": 632,
+    "uaw": 9,
+    "uucw": 115,
+    "uucp": 124,
+    "technical_factors": [
+      {
+        "name": "Распределённость",
+        "weight": 2,
+        "rating": 2,
+        "product": 4
+      },
+      {
+        "name": "Время отклика",
+        "weight": 1,
+        "rating": 3,
+        "product": 3
+      },
+      {
+        "name": "Эффективность пользователя",
+        "weight": 1,
+        "rating": 3,
+        "product": 3
+      },
+      {
+        "name": "Сложная обработка",
+        "weight": 1,
+        "rating": 2,
+        "product": 2
+      },
+      {
+        "name": "Повторное использование",
+        "weight": 1,
+        "rating": 2,
+        "product": 2
+      },
+      {
+        "name": "Простота установки",
+        "weight": 0.5,
+        "rating": 2,
+        "product": 1.0
+      },
+      {
+        "name": "Удобство эксплуатации",
+        "weight": 0.5,
+        "rating": 3,
+        "product": 1.5
+      },
+      {
+        "name": "Переносимость",
+        "weight": 2,
+        "rating": 2,
+        "product": 4
+      },
+      {
+        "name": "Простота изменений",
+        "weight": 1,
+        "rating": 3,
+        "product": 3
+      },
+      {
+        "name": "Параллелизм",
+        "weight": 1,
+        "rating": 4,
+        "product": 4
+      },
+      {
+        "name": "Безопасность",
+        "weight": 1,
+        "rating": 4,
+        "product": 4
+      },
+      {
+        "name": "Доступ третьих сторон",
+        "weight": 1,
+        "rating": 1,
+        "product": 1
+      },
+      {
+        "name": "Обучение пользователей",
+        "weight": 1,
+        "rating": 2,
+        "product": 2
+      }
+    ],
+    "environment_factors": [
+      {
+        "name": "Знание процесса",
+        "weight": 1.5,
+        "rating": 3,
+        "product": 4.5
+      },
+      {
+        "name": "Опыт с приложениями",
+        "weight": 0.5,
+        "rating": 3,
+        "product": 1.5
+      },
+      {
+        "name": "ООП опыт",
+        "weight": 1,
+        "rating": 3,
+        "product": 3
+      },
+      {
+        "name": "Ведущий аналитик",
+        "weight": 0.5,
+        "rating": 3,
+        "product": 1.5
+      },
+      {
+        "name": "Мотивация",
+        "weight": 1,
+        "rating": 4,
+        "product": 4
+      },
+      {
+        "name": "Стабильность требований",
+        "weight": 2,
+        "rating": 3,
+        "product": 6
+      },
+      {
+        "name": "Частичная занятость",
+        "weight": -1,
+        "rating": 2,
+        "product": -2
+      },
+      {
+        "name": "Сложность языка",
+        "weight": -1,
+        "rating": 2,
+        "product": -2
+      }
+    ],
+    "technical_sum": 34.5,
+    "environment_sum": 16.5,
+    "tcf": 0.9450000000000001,
+    "ecf": 0.9049999999999999,
+    "ucp": 106.0479,
+    "ucp_assumed_hours_per_point": 20,
+    "ucp_effort_hours": 2120.958,
+    "expert_totals_hours": [
+      491,
+      483,
+      511
+    ],
+    "consensus_hours": 504,
+    "recommended_budget_hours": 760
+  },
+  "phase4": {
+    "tasks": [
+      {
+        "id": "P01",
+        "name": "Уточнить объём MVP",
+        "min_h": 2,
+        "mode_h": 3,
+        "max_h": 5
+      },
+      {
+        "id": "P02",
+        "name": "Разбить реализацию на 24 работы",
+        "min_h": 5,
+        "mode_h": 7,
+        "max_h": 10
+      },
+      {
+        "id": "P03",
+        "name": "Проверить длительности работ",
+        "min_h": 4,
+        "mode_h": 6,
+        "max_h": 9
+      },
+      {
+        "id": "P04",
+        "name": "Назначить роли и мощности",
+        "min_h": 3,
+        "mode_h": 4,
+        "max_h": 7
+      },
+      {
+        "id": "P05",
+        "name": "Построить зависимости",
+        "min_h": 4,
+        "mode_h": 5,
+        "max_h": 8
+      },
+      {
+        "id": "P06",
+        "name": "Расчёт ранних и поздних сроков",
+        "min_h": 4,
+        "mode_h": 6,
+        "max_h": 9
+      },
+      {
+        "id": "P07",
+        "name": "Реализовать генератор расписания",
+        "min_h": 8,
+        "mode_h": 11,
+        "max_h": 16
+      },
+      {
+        "id": "P08",
+        "name": "Прогнать правила приоритета",
+        "min_h": 5,
+        "mode_h": 7,
+        "max_h": 10
+      },
+      {
+        "id": "P09",
+        "name": "Проверить ограничения ресурсов",
+        "min_h": 3,
+        "mode_h": 5,
+        "max_h": 8
+      },
+      {
+        "id": "P10",
+        "name": "Сравнить сроки и выбрать план",
+        "min_h": 3,
+        "mode_h": 4,
+        "max_h": 7
+      },
+      {
+        "id": "P11",
+        "name": "Составить RACI и обоснование",
+        "min_h": 3,
+        "mode_h": 5,
+        "max_h": 8
+      },
+      {
+        "id": "P12",
+        "name": "Оформить и проверить отчёт",
+        "min_h": 5,
+        "mode_h": 7,
+        "max_h": 11
+      }
+    ],
+    "history": [
+      {
+        "week": 1,
+        "start": "2026-09-10",
+        "end": "2026-09-16",
+        "completed_tasks": 4,
+        "hours_per_person": 6,
+        "clean_hours": 18
+      },
+      {
+        "week": 2,
+        "start": "2026-09-17",
+        "end": "2026-09-23",
+        "completed_tasks": 5,
+        "hours_per_person": 5,
+        "clean_hours": 15
+      },
+      {
+        "week": 3,
+        "start": "2026-09-24",
+        "end": "2026-09-30",
+        "completed_tasks": 3,
+        "hours_per_person": 4,
+        "clean_hours": 12
+      },
+      {
+        "week": 4,
+        "start": "2026-10-01",
+        "end": "2026-10-07",
+        "completed_tasks": 4,
+        "hours_per_person": 4,
+        "clean_hours": 12
+      }
+    ],
+    "replications": 50000,
+    "seed": 42024,
+    "task_count": 12,
+    "task_hours_mode_total": 70,
+    "throughput_model": {
+      "mean": 3.34202,
+      "p50": 3,
+      "p80": 4,
+      "p90": 4,
+      "distribution": {
+        "3": 32899,
+        "4": 17101
+      }
+    },
+    "capacity_model": {
+      "mean": 5.83078,
+      "p50": 6,
+      "p80": 6,
+      "p90": 6,
+      "distribution": {
+        "4": 65,
+        "5": 12419,
+        "6": 33433,
+        "7": 4078,
+        "8": 5
+      }
+    }
+  },
+  "phase5": {
+    "tasks": [
+      {
+        "id": "A01",
+        "name": "Согласовать MVP и критерии готовности",
+        "duration_days": 3,
+        "demand": {
+          "BA": 1
+        },
+        "predecessors": [],
+        "es": 0,
+        "ls": 0,
+        "slack": 0,
+        "free": 0,
+        "start_day": 0,
+        "end_day": 3,
+        "start_date": "2027-01-11",
+        "finish_date": "2027-01-13"
+      },
+      {
+        "id": "A02",
+        "name": "Уточнить процессы выдачи и возврата",
+        "duration_days": 3,
+        "demand": {
+          "BA": 1
+        },
+        "predecessors": [
+          "A01"
+        ],
+        "es": 3,
+        "ls": 22,
+        "slack": 19,
+        "free": 1,
+        "start_day": 3,
+        "end_day": 6,
+        "start_date": "2027-01-14",
+        "finish_date": "2027-01-18"
+      },
+      {
+        "id": "A03",
+        "name": "Спроектировать архитектуру и модель данных",
+        "duration_days": 4,
+        "demand": {
+          "Архитектор": 1
+        },
+        "predecessors": [
+          "A01"
+        ],
+        "es": 3,
+        "ls": 3,
+        "slack": 0,
+        "free": 0,
+        "start_day": 3,
+        "end_day": 7,
+        "start_date": "2027-01-14",
+        "finish_date": "2027-01-19"
+      },
+      {
+        "id": "A04",
+        "name": "Создать прототип интерфейса",
+        "duration_days": 4,
+        "demand": {
+          "Дизайнер": 1
+        },
+        "predecessors": [
+          "A01"
+        ],
+        "es": 3,
+        "ls": 17,
+        "slack": 14,
+        "free": 0,
+        "start_day": 3,
+        "end_day": 7,
+        "start_date": "2027-01-14",
+        "finish_date": "2027-01-19"
+      },
+      {
+        "id": "A05",
+        "name": "Настроить репозиторий и сборку",
+        "duration_days": 2,
+        "demand": {
+          "DevOps": 1
+        },
+        "predecessors": [
+          "A03"
+        ],
+        "es": 7,
+        "ls": 7,
+        "slack": 0,
+        "free": 0,
+        "start_day": 7,
+        "end_day": 9,
+        "start_date": "2027-01-20",
+        "finish_date": "2027-01-21"
+      },
+      {
+        "id": "A06",
+        "name": "Подготовить БД и миграции",
+        "duration_days": 3,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A03",
+          "A05"
+        ],
+        "es": 9,
+        "ls": 9,
+        "slack": 0,
+        "free": 0,
+        "start_day": 9,
+        "end_day": 12,
+        "start_date": "2027-01-22",
+        "finish_date": "2027-01-26"
+      },
+      {
+        "id": "A07",
+        "name": "Реализовать авторизацию и роли",
+        "duration_days": 5,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A06"
+        ],
+        "es": 12,
+        "ls": 13,
+        "slack": 1,
+        "free": 0,
+        "start_day": 12,
+        "end_day": 17,
+        "start_date": "2027-01-27",
+        "finish_date": "2027-02-02"
+      },
+      {
+        "id": "A08",
+        "name": "Реализовать каталог и карточку",
+        "duration_days": 5,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A04",
+          "A06"
+        ],
+        "es": 12,
+        "ls": 21,
+        "slack": 9,
+        "free": 0,
+        "start_day": 17,
+        "end_day": 22,
+        "start_date": "2027-02-03",
+        "finish_date": "2027-02-09"
+      },
+      {
+        "id": "A09",
+        "name": "Реализовать календарь доступности",
+        "duration_days": 6,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A06"
+        ],
+        "es": 12,
+        "ls": 12,
+        "slack": 0,
+        "free": 0,
+        "start_day": 12,
+        "end_day": 18,
+        "start_date": "2027-01-27",
+        "finish_date": "2027-02-03"
+      },
+      {
+        "id": "A10",
+        "name": "Реализовать бронирование и проверку конфликтов",
+        "duration_days": 7,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A07",
+          "A09"
+        ],
+        "es": 18,
+        "ls": 18,
+        "slack": 0,
+        "free": 0,
+        "start_day": 18,
+        "end_day": 25,
+        "start_date": "2027-02-04",
+        "finish_date": "2027-02-12"
+      },
+      {
+        "id": "A11",
+        "name": "Реализовать мои брони и отмену",
+        "duration_days": 4,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A10"
+        ],
+        "es": 25,
+        "ls": 31,
+        "slack": 6,
+        "free": 6,
+        "start_day": 27,
+        "end_day": 31,
+        "start_date": "2027-02-17",
+        "finish_date": "2027-02-22"
+      },
+      {
+        "id": "A12",
+        "name": "Реализовать выдачу и возврат",
+        "duration_days": 6,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A02",
+          "A10"
+        ],
+        "es": 25,
+        "ls": 25,
+        "slack": 0,
+        "free": 0,
+        "start_day": 25,
+        "end_day": 31,
+        "start_date": "2027-02-15",
+        "finish_date": "2027-02-22"
+      },
+      {
+        "id": "A13",
+        "name": "Реализовать управление оборудованием",
+        "duration_days": 5,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A07",
+          "A08"
+        ],
+        "es": 17,
+        "ls": 26,
+        "slack": 9,
+        "free": 9,
+        "start_day": 22,
+        "end_day": 27,
+        "start_date": "2027-02-10",
+        "finish_date": "2027-02-16"
+      },
+      {
+        "id": "A14",
+        "name": "Реализовать уведомления",
+        "duration_days": 4,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A10"
+        ],
+        "es": 25,
+        "ls": 31,
+        "slack": 6,
+        "free": 6,
+        "start_day": 31,
+        "end_day": 35,
+        "start_date": "2027-02-23",
+        "finish_date": "2027-02-26"
+      },
+      {
+        "id": "A15",
+        "name": "Реализовать отчёт об использовании",
+        "duration_days": 4,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A12",
+          "A13"
+        ],
+        "es": 31,
+        "ls": 31,
+        "slack": 0,
+        "free": 0,
+        "start_day": 31,
+        "end_day": 35,
+        "start_date": "2027-02-23",
+        "finish_date": "2027-02-26"
+      },
+      {
+        "id": "A16",
+        "name": "Сверстать пользовательские экраны",
+        "duration_days": 6,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A04",
+          "A07",
+          "A08"
+        ],
+        "es": 17,
+        "ls": 35,
+        "slack": 18,
+        "free": 18,
+        "start_day": 35,
+        "end_day": 41,
+        "start_date": "2027-03-01",
+        "finish_date": "2027-03-08"
+      },
+      {
+        "id": "A17",
+        "name": "Сверстать экраны сотрудника и администратора",
+        "duration_days": 5,
+        "demand": {
+          "Разработчик": 1
+        },
+        "predecessors": [
+          "A12",
+          "A13"
+        ],
+        "es": 31,
+        "ls": 36,
+        "slack": 5,
+        "free": 5,
+        "start_day": 35,
+        "end_day": 40,
+        "start_date": "2027-03-01",
+        "finish_date": "2027-03-05"
+      },
+      {
+        "id": "A18",
+        "name": "Подготовить тестовые сценарии",
+        "duration_days": 4,
+        "demand": {
+          "Тестировщик": 1
+        },
+        "predecessors": [
+          "A02",
+          "A04"
+        ],
+        "es": 7,
+        "ls": 52,
+        "slack": 45,
+        "free": 45,
+        "start_day": 7,
+        "end_day": 11,
+        "start_date": "2027-01-20",
+        "finish_date": "2027-01-25"
+      },
+      {
+        "id": "A19",
+        "name": "Провести модульные и API-тесты",
+        "duration_days": 6,
+        "demand": {
+          "Тестировщик": 1
+        },
+        "predecessors": [
+          "A10",
+          "A11",
+          "A12",
+          "A13",
+          "A14",
+          "A15"
+        ],
+        "es": 35,
+        "ls": 35,
+        "slack": 0,
+        "free": 0,
+        "start_day": 35,
+        "end_day": 41,
+        "start_date": "2027-03-01",
+        "finish_date": "2027-03-08"
+      },
+      {
+        "id": "A20",
+        "name": "Провести сквозные и нагрузочные тесты",
+        "duration_days": 5,
+        "demand": {
+          "Тестировщик": 1
+        },
+        "predecessors": [
+          "A16",
+          "A17",
+          "A19"
+        ],
+        "es": 41,
+        "ls": 41,
+        "slack": 0,
+        "free": 0,
+        "start_day": 41,
+        "end_day": 46,
+        "start_date": "2027-03-09",
+        "finish_date": "2027-03-15"
+      },
+      {
+        "id": "A21",
+        "name": "Исправить найденные дефекты",
+        "duration_days": 5,
+        "demand": {
+          "Разработчик": 2
+        },
+        "predecessors": [
+          "A20"
+        ],
+        "es": 46,
+        "ls": 46,
+        "slack": 0,
+        "free": 0,
+        "start_day": 46,
+        "end_day": 51,
+        "start_date": "2027-03-16",
+        "finish_date": "2027-03-22"
+      },
+      {
+        "id": "A22",
+        "name": "Подготовить развертывание и резервирование",
+        "duration_days": 4,
+        "demand": {
+          "DevOps": 1
+        },
+        "predecessors": [
+          "A05",
+          "A15"
+        ],
+        "es": 35,
+        "ls": 47,
+        "slack": 12,
+        "free": 12,
+        "start_day": 35,
+        "end_day": 39,
+        "start_date": "2027-03-01",
+        "finish_date": "2027-03-04"
+      },
+      {
+        "id": "A23",
+        "name": "Провести приёмку с заказчиком",
+        "duration_days": 3,
+        "demand": {
+          "BA": 1
+        },
+        "predecessors": [
+          "A21",
+          "A22"
+        ],
+        "es": 51,
+        "ls": 51,
+        "slack": 0,
+        "free": 0,
+        "start_day": 51,
+        "end_day": 54,
+        "start_date": "2027-03-23",
+        "finish_date": "2027-03-25"
+      },
+      {
+        "id": "A24",
+        "name": "Выпустить MVP и передать инструкции",
+        "duration_days": 2,
+        "demand": {
+          "DevOps": 1
+        },
+        "predecessors": [
+          "A23"
+        ],
+        "es": 54,
+        "ls": 54,
+        "slack": 0,
+        "free": 0,
+        "start_day": 54,
+        "end_day": 56,
+        "start_date": "2027-03-26",
+        "finish_date": "2027-03-29"
+      }
+    ],
+    "capacity": {
+      "BA": 1,
+      "Архитектор": 1,
+      "Разработчик": 2,
+      "Дизайнер": 1,
+      "Тестировщик": 1,
+      "DevOps": 1
+    },
+    "start_date": "2027-01-11",
+    "baseline_days": 56,
+    "best_rule": "LST",
+    "makespan_days": 56,
+    "finish_date": "2027-03-29",
+    "heuristics": [
+      {
+        "rule": "SLK",
+        "days": 65
+      },
+      {
+        "rule": "FREE",
+        "days": 61
+      },
+      {
+        "rule": "LST",
+        "days": 56
+      },
+      {
+        "rule": "LFT",
+        "days": 56
+      },
+      {
+        "rule": "LSTLFT",
+        "days": 56
+      },
+      {
+        "rule": "GRPW",
+        "days": 61
+      },
+      {
+        "rule": "LPT",
+        "days": 63
+      },
+      {
+        "rule": "MIS",
+        "days": 61
+      },
+      {
+        "rule": "GRD",
+        "days": 63
+      },
+      {
+        "rule": "GRWC",
+        "days": 61
+      },
+      {
+        "rule": "GCRWC",
+        "days": 61
+      },
+      {
+        "rule": "ROT",
+        "days": 65
+      },
+      {
+        "rule": "RANDOM (лучший из 100)",
+        "days": 58
+      }
+    ],
+    "random_runs": 100,
+    "total_person_days": 110,
+    "critical_tasks": [
+      "A01",
+      "A03",
+      "A05",
+      "A06",
+      "A09",
+      "A10",
+      "A12",
+      "A15",
+      "A19",
+      "A20",
+      "A21",
+      "A23",
+      "A24"
+    ]
+  },
+  "reconstructed_log": [
+    {
+      "week": 1,
+      "period_start": "2026-09-10",
+      "period_end": "2026-09-16",
+      "task_id": "F1-01",
+      "task_name": "Уточнить концепции и критерии",
+      "clean_hours_estimate": 5,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 1,
+      "period_start": "2026-09-10",
+      "period_end": "2026-09-16",
+      "task_id": "F1-02",
+      "task_name": "Провести независимые оценки TOPSIS",
+      "clean_hours_estimate": 4,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 1,
+      "period_start": "2026-09-10",
+      "period_end": "2026-09-16",
+      "task_id": "F1-03",
+      "task_name": "Провести парные сравнения МАИ",
+      "clean_hours_estimate": 5,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 1,
+      "period_start": "2026-09-10",
+      "period_end": "2026-09-16",
+      "task_id": "F1-04",
+      "task_name": "Проверить полноту и согласованность оценок",
+      "clean_hours_estimate": 4,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 2,
+      "period_start": "2026-09-17",
+      "period_end": "2026-09-23",
+      "task_id": "F1-05",
+      "task_name": "Рассчитать нечёткий коллективный TOPSIS",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 2,
+      "period_start": "2026-09-17",
+      "period_end": "2026-09-23",
+      "task_id": "F1-06",
+      "task_name": "Рассчитать чёткий коллективный МАИ",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 2,
+      "period_start": "2026-09-17",
+      "period_end": "2026-09-23",
+      "task_id": "F1-07",
+      "task_name": "Сопоставить результаты и выбрать концепцию",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 2,
+      "period_start": "2026-09-17",
+      "period_end": "2026-09-23",
+      "task_id": "F1-08",
+      "task_name": "Описать исходные данные, расчёты и вывод",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 2,
+      "period_start": "2026-09-17",
+      "period_end": "2026-09-23",
+      "task_id": "F1-09",
+      "task_name": "Обновить RACI и учёт времени",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 3,
+      "period_start": "2026-09-24",
+      "period_end": "2026-09-30",
+      "task_id": "T01",
+      "task_name": "Границы MVP и роли пользователей",
+      "clean_hours_estimate": 4,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 3,
+      "period_start": "2026-09-24",
+      "period_end": "2026-09-30",
+      "task_id": "T02",
+      "task_name": "Список и цели Use Cases",
+      "clean_hours_estimate": 4,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 3,
+      "period_start": "2026-09-24",
+      "period_end": "2026-09-30",
+      "task_id": "T03",
+      "task_name": "Основные и альтернативные потоки UC01–UC06",
+      "clean_hours_estimate": 4,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 4,
+      "period_start": "2026-10-01",
+      "period_end": "2026-10-07",
+      "task_id": "T04",
+      "task_name": "Основные и альтернативные потоки UC07–UC12",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 4,
+      "period_start": "2026-10-01",
+      "period_end": "2026-10-07",
+      "task_id": "T05",
+      "task_name": "Граница COSMIC и группы данных",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 4,
+      "period_start": "2026-10-01",
+      "period_end": "2026-10-07",
+      "task_id": "T06",
+      "task_name": "Подсчёт движений COSMIC",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    },
+    {
+      "week": 4,
+      "period_start": "2026-10-01",
+      "period_end": "2026-10-07",
+      "task_id": "T07",
+      "task_name": "Акторы и веса UCP",
+      "clean_hours_estimate": 3,
+      "status": "Восстановлено по памяти",
+      "exact_dates_known": false
+    }
+  ]
+}
